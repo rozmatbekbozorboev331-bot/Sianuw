@@ -23,6 +23,12 @@ a {
 
 body {
   font-family: 'Inter', sans-serif;
+  background: var(--body);
+}
+
+button {
+  border: none;
+  cursor: pointer;
 }
 
 .container {
@@ -30,4 +36,60 @@ body {
   width: 100%;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+.flex {
+  display: flex;
+}
+
+.btn {
+  background: var(--primery);
+  font-weight: 700;
+  color: white;
+  padding: 12px 32px;
+  border-radius: 6px;
+}
+
+/* ==================================== Nav start ======================================= */
+
+.nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__left {
+  column-gap: 148px;
+  align-items: center;
+}
+
+.nav__link {
+  color: var(--text);
+  padding: 31px 22px;
+  display: block;
+}
+
+.nav__link:hover {
+  color: white;
+}
+
+.nav__right {
+  align-items: center;
+  color: white;
+}
+
+.nav__right select {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+}
+
+.nav__right select option {
+  background: var(--body);
+}
+
+
+.nav__btn {
+  margin-left: 31px;
 }
